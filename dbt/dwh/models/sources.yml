@@ -1,0 +1,15 @@
+version: 2
+sources:
+ - name: dwh
+   schema: public
+   tables:
+    - name: airbyte_recettes_journalieres
+      identifier: recettes_journalieres
+    - name: airbyte_boutiques_franchises
+      identifier: boutiques_franchises
+
+      # loaded_at_field: date
+      # freshness:
+      #  warn_after: {count: 1, period: hour}
+      #  error_after: {count: 24, period: hour}
+
